@@ -5,12 +5,101 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/4271bf6616.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header"></header>
-    <section class="section"></section>
-    <main class="main"></main>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__div">
+        <div class="header__div__div">
+          <button class="header__div__div__button">
+            <span class="header__div__div__button--span"></span>
+            <span class="header__div__div__button--span"></span>
+            <span class="header__div__div__button--span"></span>
+          </button>
+          <ul class="header__div__div__ul">
+            <li class="header__div__div__ul__li">
+              <i class="fa-brands fa-github"></i>
+            </li>
+            <li class="header__div__div__ul__li">
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li class="header__div__div__ul__li">
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+            <li class="header__div__div__ul__li">
+              <i class="fa-brands fa-whatsapp"></i>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__nav-mobile">
+          <ul class="header__div__nav-mobile__ul">
+            <li class="header__div__nav-mobile__ul--li">ABOUT ME</li>
+            <li class="header__div__nav-mobile__ul--li">CONTACT</li>
+            <li class="header__div__nav-mobile__ul--li">PROJECTS</li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="header__nav-desktop" hidden>
+        <ul class="header__nav-desktop__ul">
+          <li class="header__nav-desktop__ul--li">ABOUT ME</li>
+          <li class="header__nav-desktop__ul--li">CONTACT</li>
+          <li class="header__nav-desktop__ul--li">PROJECTS</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Titles -->
+    <section class="section">
+      <h1 class="section--h1">JORGE GONZÁLEZ</h1>
+      <hr class="section--hr" />
+      <h2 class="section--h2">AndrevLare</h2>
+    </section>
+
+    <!-- Main -->
+    <main class="main">
+      <article class="main__about">
+        <h3 class="main__about--h3">Welcome</h3>
+        <p class="main__about--p">
+          ¡Hi there! I'm Jorge González, a.k.a. AndrevLare. Front-end developer
+          and web designer, blending creativity and functionality to craft
+          stunning digital experiences. Ready to stand out online? ¡let´s make
+          it happen!
+        </p>
+      </article>
+      <article class="main__contact">
+        <h3 class="main__contact--h3">HELLO</h3>
+        <p class="main__contact--p">
+          Need a beutiful and personalized website to increase your brand? Get
+          in touch with me.
+        </p>
+        <form class="main__contact__form">
+          <input
+            type="email"
+            required
+            placeholder="Your email"
+            class="main__contact__form--email"
+          />
+          <input
+            type="text"
+            required
+            placeholder="Tell me about your brand and future website"
+            class="main__contact__form--text"
+          />
+          <input type="submit" class="main__contact__form--submit" />
+        </form>
+      </article>
+      <article class="main__projects"></article>
+    </main>
+
+    <!-- Social Networks -->
     <aside class="aside"></aside>
+
+    <!-- Footer -->
     <footer class="footer">
       <p class="footer--p">
         Website by AndrevLare ©2024 All rights Reserved | The website doesn´t
