@@ -1,5 +1,5 @@
-- Estructura HTML                   <--
-- Nav
+- Estructura HTML /               
+- Nav /
 - Title
 - Main
 - About me
@@ -11,3 +11,4 @@
 - Background
 - Metadatos 
 - Animación de incio
+- Media queris
