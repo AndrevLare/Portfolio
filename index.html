@@ -18,34 +18,20 @@
 
   <body>
     <div class="mobile-div">
-      <div class="mobile-div__div">
-        <button class="mobile-div__div__button">
-          <span class="mobile-div__div__button--span menu-line1"></span>
-          <span class="mobile-div__div__button--span menu-line2"></span>
-          <span class="mobile-div__div__button--span menu-line3"></span>
-        </button>
-        <ul class="mobile-div__div__ul">
-          <li class="mobile-div__div__ul__li">
-            <i class="fa-brands fa-github"></i>
-          </li>
-          <li class="mobile-div__div__ul__li">
-            <i class="fa-brands fa-instagram"></i>
-          </li>
-          <li class="mobile-div__div__ul__li">
-            <i class="fa-brands fa-linkedin"></i>
-          </li>
-          <li class="mobile-div__div__ul__li">
-            <i class="fa-brands fa-whatsapp"></i>
-          </li>
-        </ul>
-      </div>
-      <nav class="nav-mobile">
-        <ul class="nav-mobile__ul">
-          <li class="nav-mobile__ul--li">ABOUT ME</li>
-          <li class="nav-mobile__ul--li">CONTACT</li>
-          <li class="nav-mobile__ul--li">PROJECTS</li>
-        </ul>
-      </nav>
+      <ul class="mobile-div__ul">
+        <li class="mobile-div__ul__li">
+          <i class="fa-brands fa-github"></i>
+        </li>
+        <li class="mobile-div__ul__li">
+          <i class="fa-brands fa-instagram"></i>
+        </li>
+        <li class="mobile-div__ul__li">
+          <i class="fa-brands fa-linkedin"></i>
+        </li>
+        <li class="mobile-div__ul__li">
+          <i class="fa-brands fa-whatsapp"></i>
+        </li>
+      </ul>
     </div>
     <div class="container">
       <!-- Header -->
@@ -68,8 +54,14 @@
 
       <!-- Main -->
       <main class="main">
+        <div class="main__border">
+          <span class="main__border__span1 main__border__span"></span>
+          <span class="main__border__span2 main__border__span"></span>
+          <span class="main__border__span3 main__border__span"></span>
+          <span class="main__border__span4 main__border__span"></span>
+        </div>
         <article class="main__about">
-          <h3 class="main__about--h3">Welcome</h3>
+          <h3 class="main__about--h3">WELCOME</h3>
           <p class="main__about--p">
             ¡Hi there! I'm Jorge González, a.k.a. AndrevLare. Front-end
             developer and web designer, blending creativity and functionality to
@@ -87,19 +79,18 @@
             <input
               type="email"
               required
-              placeholder="Your email"
+              placeholder="Your Email"
               class="main__contact__form--email"
             />
-            <input
-              type="text"
+            <textarea
               required
               placeholder="Tell me about your brand and future website"
               class="main__contact__form--text"
-            />
+            ></textarea>
             <input type="submit" class="main__contact__form--submit" />
           </form>
         </article>
-        <article class="main__projects"></article>
+        <!-- <article class="main__projects"></article> -->
       </main>
 
       <!-- Social Networks -->

@@ -12,3 +12,4 @@
 - Metadatos 
 - Animación de incio
 - Media queris
+- Animacion Nav 
