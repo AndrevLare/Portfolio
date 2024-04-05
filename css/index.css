@@ -171,3 +171,33 @@ h3 {
 .lines {
   display: none;
 }
+
+.panel {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-black);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: panel-animation 1000ms ease-in-out 900ms;
+  animation-fill-mode: forwards;
+}
+.panel--text {
+  font-size: 1.5rem;
+  animation: panel-text-animation 750ms ease-in-out 150ms;
+  animation-fill-mode: forwards;
+}
+@keyframes panel-text-animation {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes panel-animation {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
