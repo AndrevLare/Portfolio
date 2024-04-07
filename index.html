@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/BGs/noise.css" />
     <link rel="stylesheet" href="css/BGs/BG-lines.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
 
   <body>
@@ -52,10 +53,10 @@
       <!-- Main -->
       <main class="main">
         <div class="main__border">
-          <span class="main__border__span1 main__border__span"></span>
-          <span class="main__border__span2 main__border__span"></span>
-          <span class="main__border__span3 main__border__span"></span>
-          <span class="main__border__span4 main__border__span"></span>
+          <span class="main__border--span1 border--span"></span>
+          <span class="main__border--span2 border--span"></span>
+          <span class="main__border--span3 border--span"></span>
+          <span class="main__border--span4 border--span"></span>
         </div>
         <article class="main__about">
           <h3 class="main__about--h3">WELCOME</h3>
@@ -93,17 +94,21 @@
       <!-- Social Networks -->
       <aside class="aside">
         <ul class="aside__ul">
-          <li class="aside__ul__li">
-            <i
-              class="fa-brands fa-instagram"
-              onclick="openSocialNetwork(0)"
-            ></i>
+          <div class="aside__border">
+            <span class="aside__border--span1 border--span"></span>
+            <span class="aside__border--span2 border--span"></span>
+            <span class="aside__border--span3 border--span"></span>
+            <span class="aside__border--span4 border--span"></span>
+          </div>
+          <li>
+            <i class="fa-brands fa-instagram" onclick="openSocialNetwork(1)">
+            </i>
           </li>
-          <li class="aside__ul__li">
-            <i class="fa-brands fa-linkedin" onclick="openSocialNetwork(1)"></i>
+          <li>
+            <i class="fa-brands fa-linkedin" onclick="openSocialNetwork(2)"></i>
           </li>
-          <li class="aside__ul__li">
-            <i class="fa-brands fa-whatsapp" onclick="openSocialNetwork(2)"></i>
+          <li>
+            <i class="fa-brands fa-whatsapp" onclick="openSocialNetwork(0)"></i>
           </li>
         </ul>
       </aside>

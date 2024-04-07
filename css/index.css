@@ -83,6 +83,7 @@ h3 {
   font-size: 0.75rem;
   letter-spacing: 1mm;
   color: var(--main-white);
+  max-width: 450px;
 }
 .main__contact__form {
   margin-top: 2rem;
@@ -126,28 +127,28 @@ h3 {
   top: 0;
   bottom: 0;
 }
-.main__border__span {
+.border--span {
   position: absolute;
   display: inline-block;
   background-color: var(--secundary-white);
 }
-.main__border__span1,
-.main__border__span3 {
+.main__border--span1,
+.main__border--span3 {
   width: 5rem;
   height: 0.1rem;
 }
-.main__border__span2,
-.main__border__span4 {
+.main__border--span2,
+.main__border--span4 {
   height: 12.5rem;
   width: 0.1rem;
 }
-.main__border__span1,
-.main__border__span2 {
+.main__border--span1,
+.main__border--span2 {
   left: 0;
   top: 0;
 }
-.main__border__span3,
-.main__border__span4 {
+.main__border--span3,
+.main__border--span4 {
   left: 100%;
   top: 100%;
   transform: translate(-100%, -100%);
@@ -160,11 +161,16 @@ h3 {
 
 /* Footer */
 .footer {
-  margin-top: 2.5rem;
+  margin-block: 0.5rem;
   text-align: center;
   font-size: 0.75rem;
   letter-spacing: 0.75mm;
   color: var(--shadow-white);
+}
+.footer--p {
+  display: block;
+  margin-inline: auto;
+  max-width: 90vw;
 }
 
 /* Others */
