@@ -7,7 +7,6 @@
   padding: 0.75rem;
   border: 2px solid var(--main-white);
   width: calc(100% - 2rem);
-  /* max-width: 1480px; */
 }
 body {
   color: var(--secundary-white);
