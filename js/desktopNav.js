@@ -11,9 +11,10 @@ const navElements = [
   document.querySelector(".navElement2"),
   document.querySelector(".navElement3"),
 ];
-
-changeSection = (currentSection) => {
-  switch (currentSection) {
+let currentSection = 0;
+changeSection = (section) => {
+  currentSection = section;
+  switch (section) {
     case 0:
       sections[0].removeAttribute("hidden");
       sections[1].setAttribute("hidden", " ");
@@ -51,4 +52,10 @@ if (mediaQuery.matches === true) {
 
 addEventListener("resize", () => {
   mediaQuery = matchMedia("(min-width: 1000px) and (orientation: landscape)");
+  if (mediaQuery.matches === false) {
+    sections[0].removeAttribute("hidden");
+    sections[1].removeAttribute("hidden");
+  } else {
+    changeSection(currentSection);
+  }
 });
