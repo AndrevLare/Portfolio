@@ -1,12 +1,10 @@
         - Proyectos
-        - Social networks
         - Media 
         - Metadatos 
         - Media queris
-        - Animacion Nav 
         - Contact funcional
         - arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
-
+        - Hover para social networks
 
 
 Listo:
@@ -19,3 +17,4 @@ Listo:
 - Main /
 - About me /
 - Contact /
+- Social networks / 

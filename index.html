@@ -36,9 +36,30 @@
       <header class="header">
         <nav class="header__nav-desktop">
           <ul class="header__nav-desktop__ul">
-            <li class="header__nav-desktop__ul--li">ABOUT ME</li>
-            <li class="header__nav-desktop__ul--li">CONTACT</li>
-            <li class="header__nav-desktop__ul--li">PROJECTS</li>
+            <div class="header__nav__ul__border">
+              <span class="header__nav__ul__border--span1 border--span"></span>
+              <span class="header__nav__ul__border--span2 border--span"></span>
+              <span class="header__nav__ul__border--span3 border--span"></span>
+              <span class="header__nav__ul__border--span4 border--span"></span>
+            </div>
+            <li
+              class="header__nav-desktop__ul--li navElement1"
+              onclick="changeSection(0)"
+            >
+              ABOUT ME
+            </li>
+            <li
+              class="header__nav-desktop__ul--li navElement2"
+              onclick="changeSection(1)"
+            >
+              CONTACT
+            </li>
+            <li
+              class="header__nav-desktop__ul--li navElement3"
+              onclick="changeSection(2)"
+            >
+              PROJECTS
+            </li>
           </ul>
         </nav>
       </header>
@@ -141,5 +162,6 @@
 
     <!-- Scripts -->
     <script src="js/socialNetworks.js"></script>
+    <script src="js/desktopNav.js"></script>
   </body>
 </html>
