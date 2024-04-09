@@ -135,6 +135,7 @@ h3 {
   position: absolute;
   display: inline-block;
   background-color: var(--secundary-white);
+  transition: all 100ms ease-in;
 }
 .main__border--span1,
 .main__border--span3 {
