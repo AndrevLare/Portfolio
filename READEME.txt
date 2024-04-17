@@ -4,7 +4,6 @@
         - Media queris
         - Contact funcional
         - arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
-        - Hover para social networks
         - Añadir subpaginas
 
 
@@ -19,3 +18,4 @@ Listo:
 - About me /
 - Contact /
 - Social networks / 
+- Hover para social networks /
