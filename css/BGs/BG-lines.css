@@ -35,14 +35,14 @@
     left top,
     left bottom,
     from(rgba(255, 255, 255, 0)),
-    color-stop(75%, #ffffff),
+    color-stop(75%, #99cc99),
     to(#ffffff)
   );
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
-    #009900 75%,
-    #009900 100%
+    #55cc55 75%,
+    #55cc55 100%
   );
   -webkit-animation: run 7s 0s infinite;
   animation: run 7s 0s infinite;
