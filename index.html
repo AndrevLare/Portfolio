@@ -110,7 +110,38 @@
           </form>
         </article>
         <article class="main__projects">
-          <div class="main__projects__project"></div>
+          <h3 class="main__projects--h3">MY PROJECTS</h3>
+          <div class="projects">
+            <div
+              class="main__projects__project"
+              onclick="OpenProject('https://jjasesorias.com')"
+            >
+              <ul class="main__projects__project__ul">
+                <li class="main__projects__project__ul--li-h4">
+                  <h4>Accounter´s Web</h4>
+                </li>
+                <li class="main__projects__project__ul--li">jjasesorias.com</li>
+                <li class="main__projects__project__ul--li">Jan/2024</li>
+              </ul>
+              <i
+                class="fa-solid fa-arrow-up-right-from-square main__projects__project--i"
+              ></i>
+            </div>
+            <div
+              class="main__projects__project"
+              onclick="OpenProject('https://jjasesorias.com')"
+            >
+              <ul class="main__projects__project__ul">
+                <li class="main__projects__project__ul--li-h4">
+                  <h4>Café Web Prototype</h4>
+                </li>
+                <li class="main__projects__project__ul--li">Feb/2024</li>
+              </ul>
+              <i
+                class="fa-solid fa-arrow-up-right-from-square main__projects__project--i"
+              ></i>
+            </div>
+          </div>
         </article>
       </main>
 
@@ -165,5 +196,12 @@
     <!-- Scripts -->
     <script src="js/socialNetworks.js"></script>
     <script src="js/desktopNav.js"></script>
+
+    <!-- Inline Scripts -->
+    <script>
+      OpenProject = (link) => {
+        window.open(`${link}`);
+      };
+    </script>
   </body>
 </html>

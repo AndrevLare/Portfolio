@@ -1,21 +1,21 @@
-        - Proyectos
-        - Media 
         - Metadatos 
-        - Media queris
         - Contact funcional
         - arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
         - Añadir subpaginas
-
+        - sombra para el puntero (que lo siga);
 
 Listo:
-- Animación de incio /
-- Background /
-- footer /
-- Estructura HTML /               
-- Nav /
-- Title /
-- Main /
-- About me /
-- Contact /
-- Social networks / 
-- Hover para social networks /
+- Media 
+- Media queris
+- Proyectos
+- Animación de incio 
+- Background 
+- footer 
+- Estructura HTML         
+- Nav 
+- Title 
+- Main 
+- About me 
+- Contact 
+- Social networks 
+- Hover para social networks 

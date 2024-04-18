@@ -203,12 +203,38 @@
   .main__contact__form {
     min-width: 500px;
   }
-  /* .main__contact__form *::placeholder {
-    transition: color 100ms ease-out, letter-spacing 100ms ease-out;
+
+  /* projects */
+  .main__projects {
+    min-width: 300px;
+    z-index: 100;
   }
-  .main__contact__form *:hover::placeholder {
-    color: green;
-  } */
+  .main__projects__project__ul {
+    border: none;
+  }
+  .main__projects__project {
+    position: relative;
+  }
+  .main__projects__project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--main-white);
+    transition: 250ms;
+    z-index: -2;
+  }
+  .main__projects__project:hover * {
+    transition: color 250ms;
+    color: var(--green);
+  }
+  .main__projects__project:hover::after {
+    left: 100%;
+    background-color: var(--dark-green);
+  }
   /* Footer */
   .footer {
     grid-area: 3/1/3/3;
