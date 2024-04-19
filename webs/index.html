@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Main Data -->
+    <title>Tu Cafeteria Online</title>
+    <link
+      rel="icon"
+      href="img/Logo/LogoAndrevLareTextLess.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AndrevLare" />
+
+    <!-- Metadatos Variables -->
+    <meta
+      name="description"
+      content="Descripción corta y relevante de tu sitio web"
+    />
+    <meta
+      name="keywords"
+      content="Palabras clave relacionadas con tu contenido"
+    />
+    <meta name="robots" content="directivas_robots" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content=" " />
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/animations/main-animations.css" />
+    <link rel="stylesheet" href="css/general/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="256x256"
+      href="img/Logo/LogoAndrevLareTextLess.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/Logo/LogoAndrevLareTextLess.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="90x90"
+      href="img/Logo/LogoAndrevLareTextLess.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="50x50"
+      href="img/Logo/LogoAndrevLareTextLess.ico"
+    />
+    <link rel="canonical" href="https://jjasesores.com/index.html" />
+
+    <!-- Scripts -->
+    <script
+      src="https://kit.fontawesome.com/4271bf6616.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <span class="load-Panel"></span>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/Logo/LogoAndrevLareTextLess.png"
+          alt="Logo"
+          title="Cafeteria"
+          class="header--img"
+        />
+        <ul class="DD-nav__ul" hidden=" ">
+          <li class="nav__ul--li">
+            <a href="#main">Inicio</a>
+          </li>
+          <li class="nav__ul--li">
+            <a href="#location">¿Donde Estamos?</a>
+          </li>
+          <li class="nav__ul--li">
+            <a href="#menu">Nuestro Menú</a>
+          </li>
+          <li class="nav__ul--li">
+            <a href="#reviews">Reseñas</a>
+          </li>
+        </ul>
+        <button class="nav__button" onclick="menuSwitch()">
+          <span class="nav__button--span line1"></span>
+          <span class="nav__button--span line2"></span>
+          <span class="nav__button--span line3"></span>
+        </button>
+      </nav>
+      <ul class="header__ul">
+        <li class="header__ul--li">
+          <a href="#main" onclick="menuSwitch()">Inicio</a>
+        </li>
+        <li class="header__ul--li">
+          <a href="#location" onclick="menuSwitch()">¿Donde Estamos?</a>
+        </li>
+        <li class="header__ul--li">
+          <a href="#menu" onclick="menuSwitch()">Nuestro Menú</a>
+        </li>
+        <li class="header__ul--li">
+          <a href="#reviews" onclick="menuSwitch()">Reseñas</a>
+        </li>
+        <li class="header__ul--li header__ul--li-social">
+          <a href=""> <i class="fa-brands fa-instagram"></i></a>
+          <a href=""> <i class="fa-brands fa-facebook"></i></a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Main -->
+    <main class="main anchor" id="main">
+      <div class="main__div">
+        <h1 class="main__div--h1">Tu Cafeteria, ¡Ahora Online!</h1>
+        <hr class="main__div--hr" />
+      </div>
+      <p class="main--p">
+        ¿Quieres una cafetería en línea que deje a tus clientes con ganas de
+        más? Con mi diseño web, transformo tu visión en una experiencia digital
+        cautivadora. Destaca entre la competencia y atrae a nuevos clientes.
+        ¡Vamos a llevar tu cafetería al siguiente nivel juntos!
+      </p>
+      <span class="main__span sample-img">
+        <img
+          src="img/imgs/Sample0.jpg"
+          alt="Sample0"
+          title="Sample0"
+          class="main__span--img rellax"
+          data-rellax-speed="0"
+          data-rellax-desktop-speed="-3"
+          data-rellax-tablet-speed="-2"
+        />
+      </span>
+    </main>
+
+    <!-- Map -->
+    <section class="map anchor SR-center" id="location">
+      <h3 class="map--h3">¿Donde Estamos?</h3>
+      <hr class="map--hr" />
+      <div class="map-container">
+        <div class="map__div">
+          <ul class="map__div__ul">
+            <li class="map__div__ul--li">
+              <i class="fa-regular fa-clock"></i>
+              <p>Lunes-Viernes 8:00am - 8:00pm</p>
+            </li>
+            <li class="map__div__ul--li">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sabado Y Domingo 8:00am - 8:00pm</p>
+            </li>
+            <li class="map__div__ul--li">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Isla de Pascua, Valparaíso, Chile</p>
+            </li>
+          </ul>
+        </div>
+        <iframe
+          class="map--iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564.6630292597041!2d-109.2770343!3d-27.126014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9947f1b353dbf5b3%3A0x7d0c6060d9c62ef6!2z0JzQvtCw0Zc!5e1!3m2!1ses-419!2sco!4v1709424203788!5m2!1ses-419!2sco"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Menu-->
+    <section class="menu-container SR-center anchor" id="menu">
+      <h3 class="menu-container--h3">Nuestro Menu</h3>
+      <hr class="menu-container--hr" />
+      <div class="menu-grid-container">
+        <div class="menu">
+          <div class="menu__div">
+            <h3 class="menu__div--h3">Especialidades de la Casa</h3>
+            <ul class="menu__div__ul">
+              <li class="menu__div__ul--li">Diseño Web Personalizado</li>
+              <li class="menu__div__ul--li">Desarrollo de Aplicaciones Web</li>
+              <li class="menu__div__ul--li">
+                Actualizaciones y Mantenimiento Web
+              </li>
+              <li class="menu__div__ul--li">Alojamiento Web</li>
+            </ul>
+          </div>
+          <div class="menu__div">
+            <h3 class="menu__div--h3">Bebidas (Tipos de Proyectos)</h3>
+            <ul class="menu__div__ul">
+              <li class="menu__div__ul--li">Sitios Web Estaticos</li>
+              <li class="menu__div__ul--li">Aplicaciones Web Interactivas</li>
+              <li class="menu__div__ul--li">
+                Diseño de Interfaces de Usuario (UI)
+              </li>
+            </ul>
+          </div>
+          <div class="menu__div">
+            <h3 class="menu__div--h3">Platos Principales</h3>
+            <ul class="menu__div__ul">
+              <li class="menu__div__ul--li">
+                Diseño Web a Medida para tu Cafetería
+              </li>
+              <li class="menu__div__ul--li">
+                Desarrollo de Aplicaciones Web Personalizadas
+              </li>
+              <li class="menu__div__ul--li">
+                Optimización de la Experiencia del Usuario (UX/UI)
+              </li>
+              <li class="menu__div__ul--li">Mantenimiento Mensual</li>
+              <li class="menu__div__ul--li">
+                Alojamiento Web y Dominio Personalizado
+              </li>
+            </ul>
+          </div>
+        </div>
+        <aside class="aside SR-center">
+          <img src="img/imgs/Sample1.jpg" alt="Dessert" title="Sample1" />
+        </aside>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews"></section>
+
+    <!-- Final -->
+    <section class="final">
+      <span class="final__span sample-img">
+        <img
+          src="img/imgs/Sample2.jpg"
+          alt="Sample0"
+          title="Sample0"
+          class="final__span--img"
+        />
+      </span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <img
+        src="img/Logo/LogoAndrevLareTextLess.png"
+        alt="Logo"
+        title="footer logo"
+        hidden=""
+        class="footer--img"
+      />
+      <div class="footer__div">
+        <div class="footer__map">
+          <ul class="footer__map__ul">
+            <li class="footer__map__ul__li"><a href="#main">Inicio</a></li>
+            <li class="footer__map__ul__li">
+              <a href="#location">¿Dónde Estamos?</a>
+            </li>
+            <li class="footer__map__ul__li">
+              <a href="#menu">Menú</a>
+            </li>
+            <li class="footer__map__ul__li">
+              <a href="#reviews">Reseñas</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="footer__hr" />
+        <div class="footer__contact">
+          <p class="footer__contact--p">Informacion de contacto:</p>
+          <ul class="footer__contact__ul">
+            <li class="footer____ul__li">jorgitoa0109@gmail.com</li>
+            <li class="footer____ul__li">+57 3197914026</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer--p">
+        Tu cafeteria, ¡ahora online! | Sitio web por AndrevLare &copy; 2024
+        todos los derechos reservados. | El sitio web no utiliza cookies.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/Librarys/rellax.min.js"></script>
+    <script src="js/menu.js"></script>
+    <!-- Inline -->
+    <script>
+      let rellax = new Rellax(".rellax");
+      ScrollReveal().reveal(".SR-center", {
+        delay: 200,
+        duration: 1000,
+        easing: "ease-in-out",
+        origin: "bottom",
+        distance: "50px",
+      });
+    </script>
+    <script>
+      addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".load-Panel").classList.add("loaded");
+      });
+    </script>
+  </body>
+</html>

@@ -132,11 +132,13 @@ h4 {
 }
 .main__projects__project {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   margin-left: 0.75rem;
   gap: 2rem;
   cursor: pointer;
+  z-index: 10;
 }
 .main__projects__project__ul--li-h4 {
   font-size: 1.25rem;
@@ -146,10 +148,19 @@ h4 {
   font-weight: 400;
 }
 .main__projects__project__ul {
-  border-left: var(--main-white) solid 3px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
   padding-left: 0.75rem;
+}
+.main__projects__project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--main-white);
+  transition: 250ms;
+  z-index: -2;
 }
 
 /* Main Borders */
@@ -240,4 +251,8 @@ h4 {
     opacity: 0;
     display: none;
   }
+}
+
+.cursor-shadow {
+  display: none;
 }

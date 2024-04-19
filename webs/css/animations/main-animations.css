@@ -1,0 +1,130 @@
+/* Carga de la Pagina  */
+.loaded {
+  animation: load 1500ms ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes load {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Menu Switch */
+.menuActive {
+  animation: menu-active 250ms;
+  animation-fill-mode: forwards;
+}
+.menuInactive {
+  animation: menu-inactive 250ms;
+  animation-fill-mode: forwards;
+}
+@keyframes menu-active {
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes menu-inactive {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0);
+  }
+}
+
+/* Menu Bars */
+.line1A {
+  animation: line1-Active 250ms;
+  animation-fill-mode: forwards;
+}
+.line1I {
+  animation: line1-Inactive 250ms;
+  animation-fill-mode: forwards;
+}
+.line2A {
+  animation: line2-Active 250ms;
+  animation-fill-mode: forwards;
+}
+.line2I {
+  animation: line2-Inactive 250ms;
+  animation-fill-mode: forwards;
+}
+.line3A {
+  animation: line3-Active 250ms;
+  animation-fill-mode: forwards;
+}
+.line3I {
+  animation: line3-Inactive 250ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line1-Active {
+  100% {
+    transform: rotate(-41deg);
+  }
+}
+@keyframes line1-Inactive {
+  0% {
+    transform: rotate(-41deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes line2-Active {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes line2-Inactive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes line3-Active {
+  100% {
+    transform: rotate(41deg);
+  }
+}
+@keyframes line3-Inactive {
+  0% {
+    transform: rotate(41deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* Nav Animacion */
+@keyframes nav-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes reverse-nav-animation {
+  0% {
+    width: 90%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes nav-animation-active {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -112,6 +112,15 @@
         <article class="main__projects">
           <h3 class="main__projects--h3">MY PROJECTS</h3>
           <div class="projects">
+            <div class="main__projects__project">
+              <ul class="main__projects__project__ul">
+                <li class="main__projects__project__ul--li-h4">
+                  <h4>My Portfolio</h4>
+                </li>
+                <li class="main__projects__project__ul--li">AndrevLare.com</li>
+                <li class="main__projects__project__ul--li">Apr/2024</li>
+              </ul>
+            </div>
             <div
               class="main__projects__project"
               onclick="OpenProject('https://jjasesorias.com')"
@@ -129,7 +138,7 @@
             </div>
             <div
               class="main__projects__project"
-              onclick="OpenProject('https://jjasesorias.com')"
+              onclick="OpenProject('webs/index.html')"
             >
               <ul class="main__projects__project__ul">
                 <li class="main__projects__project__ul--li-h4">
@@ -192,16 +201,19 @@
     <div class="panel">
       <p class="panel--text">AndrevLare Portfolio</p>
     </div>
+    <span class="cursor-shadow"></span>
 
     <!-- Scripts -->
     <script src="js/socialNetworks.js"></script>
     <script src="js/desktopNav.js"></script>
+    <script src="js/mouseShadow.js"></script>
 
     <!-- Inline Scripts -->
     <script>
-      OpenProject = (link) => {
+      async function OpenProject(link) {
+        await new Promise((resolve) => setTimeout(resolve, 300));
         window.open(`${link}`);
-      };
+      }
     </script>
   </body>
 </html>

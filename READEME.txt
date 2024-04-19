@@ -3,6 +3,8 @@
         - arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
         - Añadir subpaginas
         - sombra para el puntero (que lo siga);
+        - Hover para formulario
+        - arreglar scroll de Contact
 
 Listo:
 - Media 
