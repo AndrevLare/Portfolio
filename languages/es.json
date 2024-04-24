@@ -1,0 +1,30 @@
+{
+  "about": {
+    "title": "BIENVENIDO.",
+    "text": "¡Hola! Soy Jorge González, también conocido como AndrevLare. Soy desarrollador front-end y diseñador web, combinando creatividad y funcionalidad para crear experiencias digitales impresionantes. ¿Listo para destacar en línea? ¡Hagámoslo realidad!"
+  },
+  "contact": {
+    "title": "HOLA.",
+    "text": "¿Necesitas un sitio web elegante y personalizado para potenciar tu marca o nombre? Contactame y hablemos de tu futuro en linea."
+  },
+  "projects": {
+    "title": "MIS PROYECTOS.",
+
+    "project1Title": "Mi Portfolio",
+    "project1Date": "Abr/2024",
+
+    "project2Title": "Web para un Contador",
+    "Project2Date": "Ene/2024",
+
+    "project3Title": "Web para Cafeteria",
+    "project3Date": "Feb/2024"
+  },
+  "footer": {
+    "text": "Sitio web de AndrevLare ©2024 Todos los Derechos Reservados | El sitio no usa cookies"
+  },
+  "nav": {
+    "about": "SOBRE MI",
+    "contact": "CONTACTAME",
+    "projects": "PROYECTOS"
+  }
+}

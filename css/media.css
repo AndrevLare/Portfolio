@@ -1,4 +1,5 @@
 @import url(variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 @media (min-width: 1000px) and (orientation: landscape) {
   body {
     height: 100vh;
@@ -6,7 +7,7 @@
   }
   .container {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 55% 45%;
     grid-template-rows: 15% 82% 3%;
     height: calc(100vh - 2rem);
     margin: 1rem;
@@ -17,7 +18,7 @@
   /* Header */
   .header {
     display: inline-block;
-    grid-area: 2 /2 / 2 / 2;
+    grid-area: 2 /2/ 3 / 3;
   }
   .header__nav-desktop {
     height: 100%;
@@ -86,6 +87,7 @@
 
   /* Titles */
   .section {
+    grid-area: 1 / 1 / 2 / 2;
     align-items: start;
     margin-left: 1rem;
     color: var(--main-white);
@@ -105,12 +107,15 @@
 
   /* Social Networks */
   .aside {
+    grid-area: 1 / 2 / 2 / 3;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: end;
     align-items: start;
-    padding: 1.5rem;
+    gap: 1rem;
+    margin: 1.75rem 0 0 0;
+    padding-right: 1.75rem;
   }
   .aside__ul {
     display: flex;
@@ -128,6 +133,78 @@
     scale: 1.1;
     color: var(--green);
     text-shadow: 0 5px 10px var(--green);
+  }
+  /* Languages */
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 0;
+  }
+  .language__ul {
+    position: relative;
+    padding: 0.8rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .language__ul__li--p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--main-white);
+    padding-left: 0.25rem;
+    cursor: pointer;
+    transition: 150ms;
+    position: relative;
+    top: -0.25rem;
+  }
+  .language__ul__li--p:hover {
+    scale: 1.075;
+  }
+  .language__ul::before {
+    content: " ";
+    position: absolute;
+    top: 75%;
+    transform: translateX(-50%);
+    width: 2.5rem;
+    height: 0.1rem;
+    border-radius: 0.5rem;
+    background-color: var(--main-white);
+    box-shadow: 0 -1rem 15px var(--main-white);
+    transition: left 100ms ease-in-out;
+  }
+  .language-en::before {
+    left: 72%;
+  }
+  .language-es::before {
+    left: 26%;
+  }
+  .language__border {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  .language__border--span1,
+  .language__border--span3 {
+    position: absolute;
+    width: 3rem;
+    height: 0.15rem;
+  }
+  .language__border--span2,
+  .language__border--span4 {
+    position: absolute;
+    height: 1rem;
+    width: 0.15rem;
+  }
+  .language__border--span3,
+  .language__border--span4 {
+    top: 100%;
+    left: 100%;
+    transform: translate(-103%, -100%);
   }
   .aside__border {
     display: flex;
@@ -160,7 +237,7 @@
 
   /* Main */
   .main {
-    grid-area: 2 / 1 / 2 / 2;
+    grid-area: 2 / 1 / 3 / 2;
     margin: 3rem 0 0 2rem;
     align-items: start;
     padding: 0;
@@ -203,11 +280,39 @@
   .main__contact__form {
     min-width: 500px;
   }
+  .main__contact__form--submit:hover {
+    font-size: 1.075rem;
+    text-shadow: 0 5px 7px var(--green);
+    color: var(--green);
+  }
+  .main__contact__form__border-container:has(
+      > .main__contact__form--submit:hover
+    )
+    .main__contact__form__container--span1,
+  .main__contact__form__border-container:has(
+      > .main__contact__form--submit:hover
+    )
+    .main__contact__form__container--span3 {
+    width: 100%;
+    background-color: var(--green);
+  }
+  .main__contact__form__border-container:has(
+      > .main__contact__form--submit:hover
+    )
+    .main__contact__form__container--span2,
+  .main__contact__form__border-container:has(
+      > .main__contact__form--submit:hover
+    )
+    .main__contact__form__container--span4 {
+    height: 100%;
+    background-color: var(--green);
+  }
 
   /* projects */
   .main__projects {
     min-width: 300px;
     z-index: 100;
+    width: auto;
   }
   .main__projects__project {
     position: relative;
@@ -221,9 +326,10 @@
     left: 100%;
     background-color: var(--dark-green);
   }
+
   /* Footer */
   .footer {
-    grid-area: 3/1/3/3;
+    grid-area: 3/1/4/3;
     align-self: center;
     justify-self: start;
     margin-left: 0.5rem;
@@ -249,7 +355,8 @@
     width: 60rem;
     background: radial-gradient(
       circle,
-      rgba(35, 88, 35, 0.1),
+      rgba(91, 103, 91, 0.1),
+      transparent,
       transparent,
       transparent
     );

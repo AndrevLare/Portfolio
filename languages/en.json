@@ -1,0 +1,30 @@
+{
+  "about": {
+    "title": "WELCOME.",
+    "text": "¡Hi there! I'm Jorge González, a.k.a. AndrevLare. Front-end developer and web designer, blending creativity and functionality to craft stunning digital experiences. Ready to stand out online? ¡let´s make it happen!"
+  },
+  "contact": {
+    "title": "HELLO.",
+    "text": "Need a beutiful and personalized website to increase your brand? Get in touch with me."
+  },
+  "projects": {
+    "title": "MY PROJECTS.",
+
+    "project1Title": "My Portfolio",
+    "project1Date": "Apr/2024",
+
+    "project2Title": "Accounter's Web",
+    "Project2Date": "Jan/2024",
+
+    "project3Title": "Cafe Web",
+    "project3Date": "Feb/2024"
+  },
+  "footer": {
+    "text": "Website by AndrevLare ©2024 All rights Reserved | The website doesn´t use cookies"
+  },
+  "nav": {
+    "about": "ABOUT ME",
+    "contact": "CONTACT",
+    "projects": "PROJECTS"
+  }
+}

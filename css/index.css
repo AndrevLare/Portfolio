@@ -95,35 +95,118 @@ h4 {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
   gap: 1rem;
+  margin-left: 0.75rem;
+  position: relative;
+  z-index: 0;
 }
 .main__contact__form * {
   background-color: transparent;
-  border: 1px outset var(--secundary-white);
-  border-radius: 0.4rem;
+  border: none;
   padding: 0.35rem;
-  width: calc(100% - 0.75rem);
-  z-index: 100;
+  width: 90%;
+  z-index: 10;
   color: var(--main-white);
   font-size: 1.25rem;
 }
+
 .main__contact__form *:focus-visible {
   outline: none;
 }
 .main__contact__form--email::placeholder,
 .main__contact__form--text::placeholder {
   color: var(--placeholder-white);
+  transition: color 200ms ease;
 }
 .main__contact__form--text {
   height: 10rem;
   resize: none;
+}
+.main__contact__form__container {
+  position: relative;
+}
+.main__contact__form__container::before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 3px;
+  height: 100%;
+  border-radius: 0.75rem;
+  background-color: var(--main-white);
+  transition: right 300ms cubic-bezier(0, 0, 0.18, 0.94),
+    background-color 300ms cubic-bezier(0, 0, 0.18, 0.94);
+}
+.main__contact__form__container:has(> input:focus)::before,
+.main__contact__form__container:has(> textarea:focus)::before {
+  right: 0;
+  background-color: var(--dark-green);
+}
+.main__contact__form--text:focus::placeholder,
+.main__contact__form--email:focus::placeholder {
+  color: var(--dark-green);
 }
 .main__contact__form--submit {
   width: 7.5rem;
   height: 2.5rem;
   font-size: 1rem;
   color: var(--secundary-white);
+  transition: all 100ms ease;
+  position: relative;
+  z-index: 50;
+  cursor: pointer;
+}
+/* Submit Border */
+.main__contact__form__border-container {
+  width: fit-content;
+  height: 100%;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  margin-bottom: 0.25rem;
+  transition: transform 50ms;
+}
+.main__contact__form__container--span1,
+.main__contact__form__container--span3 {
+  padding: 0;
+  display: inline-block;
+  position: absolute;
+  background-color: var(--main-white);
+  height: 0.1rem;
+  width: 4rem;
+  transition: width 250ms cubic-bezier(1, -0.5, 0, 1);
+}
+.main__contact__form__container--span2,
+.main__contact__form__container--span4 {
+  padding: 0;
+  display: inline-block;
+  position: absolute;
+  background-color: var(--main-white);
+  width: 0.1rem;
+  height: 1.5rem;
+  transition: height 400ms cubic-bezier(1, -0.5, 0, 1);
+}
+.main__contact__form__container--span1,
+.main__contact__form__container--span2 {
+  top: 0;
+  left: 0;
+}
+.main__contact__form__container--span3,
+.main__contact__form__container--span4 {
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+}
+.main__contact__form__border-container:active {
+  transform: scale(1.075);
+}
+
+/* Projects */
+.main__projects {
+  width: 100%;
 }
 .projects {
   display: flex;
@@ -170,6 +253,7 @@ h4 {
   position: absolute;
   top: 0;
   bottom: 0;
+  z-index: -1;
 }
 .border--span {
   position: absolute;
@@ -203,7 +287,6 @@ h4 {
 .aside {
   display: none;
 }
-
 /* Footer */
 .footer {
   margin-block: 0.5rem;
@@ -255,4 +338,20 @@ h4 {
 
 .cursor-shadow {
   display: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px 10px #555555;
+  border: solid 3px transparent;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px 10px #2c2c2c;
+  border: solid 3px transparent;
+  border-radius: 1rem;
 }

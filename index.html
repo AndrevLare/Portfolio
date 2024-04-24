@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <title>AndrevLare</title>
+    <link
+      rel="icon"
+      href="img/cubic-LogoAndrevLareTextLess.ico"
+      type="image/x-icon"
+    />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,6 +34,9 @@
         <li class="mobile-div__ul__li">
           <i class="fa-brands fa-linkedin" onclick="openSocialNetwork(2)"></i>
         </li>
+        <li class="mobile-div__ul__li">
+          <i class="fa-solid fa-envelope" onclick="openSocialNetwork(3)"></i>
+        </li>
       </ul>
     </div>
     <div class="container">
@@ -45,18 +53,24 @@
             <li
               class="header__nav-desktop__ul--li navElement1"
               onclick="changeSection(0)"
+              data-section="nav"
+              data-value="about"
             >
               ABOUT ME
             </li>
             <li
               class="header__nav-desktop__ul--li navElement2"
               onclick="changeSection(1)"
+              data-section="nav"
+              data-value="contact"
             >
               CONTACT
             </li>
             <li
               class="header__nav-desktop__ul--li navElement3"
               onclick="changeSection(2)"
+              data-section="nav"
+              data-value="projects"
             >
               PROJECTS
             </li>
@@ -80,8 +94,10 @@
           <span class="main__border--span4 border--span"></span>
         </div>
         <article class="main__about">
-          <h3 class="main__about--h3">WELCOME</h3>
-          <p class="main__about--p">
+          <h3 class="main__about--h3" data-section="about" data-value="title">
+            WELCOME
+          </h3>
+          <p class="main__about--p" data-section="about" data-value="text">
             ¡Hi there! I'm Jorge González, a.k.a. AndrevLare. Front-end
             developer and web designer, blending creativity and functionality to
             craft stunning digital experiences. Ready to stand out online?
@@ -89,36 +105,67 @@
           </p>
         </article>
         <article class="main__contact">
-          <h3 class="main__contact--h3">HELLO</h3>
-          <p class="main__contact--p">
+          <h3
+            class="main__contact--h3"
+            data-section="contact"
+            data-value="title"
+          >
+            HELLO
+          </h3>
+          <p class="main__contact--p" data-section="contact" data-value="text">
             Need a beutiful and personalized website to increase your brand? Get
             in touch with me.
           </p>
+
           <form class="main__contact__form">
-            <input
-              type="email"
-              required
-              placeholder="Your Email"
-              class="main__contact__form--email"
-            />
-            <textarea
-              required
-              placeholder="Tell me about your brand and future website"
-              class="main__contact__form--text"
-            ></textarea>
-            <input type="submit" class="main__contact__form--submit" />
+            <div class="main__contact__form__container">
+              <input
+                type="email"
+                required
+                placeholder="Your Email"
+                class="main__contact__form--email"
+              />
+            </div>
+            <div class="main__contact__form__container">
+              <textarea
+                required
+                placeholder="Tell me about your brand and future website"
+                class="main__contact__form--text"
+              ></textarea>
+            </div>
+            <div class="main__contact__form__border-container">
+              <span class="main__contact__form__container--span1"></span>
+              <span class="main__contact__form__container--span2"></span>
+              <span class="main__contact__form__container--span3"></span>
+              <span class="main__contact__form__container--span4"></span>
+              <input type="submit" class="main__contact__form--submit" />
+            </div>
           </form>
         </article>
         <article class="main__projects">
-          <h3 class="main__projects--h3">MY PROJECTS</h3>
+          <h3
+            class="main__projects--h3"
+            data-section="projects"
+            data-value="title"
+          >
+            MY PROJECTS
+          </h3>
           <div class="projects">
             <div class="main__projects__project">
               <ul class="main__projects__project__ul">
                 <li class="main__projects__project__ul--li-h4">
-                  <h4>My Portfolio</h4>
+                  <h4 data-section="projects" data-value="project1Title">
+                    My Portfolio
+                  </h4>
                 </li>
                 <li class="main__projects__project__ul--li">AndrevLare.com</li>
-                <li class="main__projects__project__ul--li">Apr/2024</li>
+                <li
+                  class="main__projects__project__ul--li"
+                  data-section="projects"
+                  data-value="project1Date"
+                >
+                  Apr/2024
+                </li>
               </ul>
             </div>
             <div
@@ -127,10 +174,18 @@
             >
               <ul class="main__projects__project__ul">
                 <li class="main__projects__project__ul--li-h4">
-                  <h4>Accounter´s Web</h4>
+                  <h4 data-section="projects" data-value="project2Title">
+                    Accounter´s Web
+                  </h4>
                 </li>
                 <li class="main__projects__project__ul--li">jjasesorias.com</li>
-                <li class="main__projects__project__ul--li">Jan/2024</li>
+                <li
+                  class="main__projects__project__ul--li"
+                  data-section="projects"
+                  data-value="project2Date"
+                >
+                  Jan/2024
+                </li>
               </ul>
               <i
                 class="fa-solid fa-arrow-up-right-from-square main__projects__project--i"
@@ -142,9 +197,18 @@
             >
               <ul class="main__projects__project__ul">
                 <li class="main__projects__project__ul--li-h4">
-                  <h4>Café Web Prototype</h4>
+                  <h4 data-section="projects" data-value="project3Title">
+                    Café Web
+                  </h4>
                 </li>
-                <li class="main__projects__project__ul--li">Feb/2024</li>
+                <li class="main__projects__project__ul--li">Prototype</li>
+                <li
+                  class="main__projects__project__ul--li"
+                  data-section="projects"
+                  data-value="project3Date"
+                >
+                  Feb/2024
+                </li>
               </ul>
               <i
                 class="fa-solid fa-arrow-up-right-from-square main__projects__project--i"
@@ -173,12 +237,43 @@
           <li>
             <i class="fa-brands fa-whatsapp" onclick="openSocialNetwork(0)"></i>
           </li>
+          <li class="mobile-div__ul__li">
+            <i class="fa-solid fa-envelope" onclick="openSocialNetwork(3)"></i>
+          </li>
         </ul>
+        <section class="language">
+          <ul class="language__ul language-en">
+            <div class="language__border">
+              <span class="language__border--span1 border--span"></span>
+              <span class="language__border--span2 border--span"></span>
+              <span class="language__border--span3 border--span"></span>
+              <span class="language__border--span4 border--span"></span>
+            </div>
+            <li>
+              <p
+                class="language__ul__li--p"
+                data-lang="es"
+                onclick="changeLanguage(this)"
+              >
+                ES
+              </p>
+            </li>
+            <li>
+              <p
+                class="language__ul__li--p"
+                data-lang="en"
+                onclick="changeLanguage(this)"
+              >
+                EN
+              </p>
+            </li>
+          </ul>
+        </section>
       </aside>
 
       <!-- Footer -->
       <footer class="footer">
-        <p class="footer--p">
+        <p class="footer--p" data-section="footer" data-value="text">
           Website by AndrevLare ©2024 All rights Reserved | The website doesn´t
           use cookies
         </p>
@@ -207,6 +302,7 @@
     <script src="js/socialNetworks.js"></script>
     <script src="js/desktopNav.js"></script>
     <script src="js/mouseShadow.js"></script>
+    <script src="js/languages.js"></script>
 
     <!-- Inline Scripts -->
     <script>

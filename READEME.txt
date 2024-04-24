@@ -1,12 +1,16 @@
         - Metadatos 
         - Contact funcional
         - arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
-        - Añadir subpaginas
-        - sombra para el puntero (que lo siga);
-        - Hover para formulario
-        - arreglar scroll de Contact
 
 Listo:
+- Arreglar projects
+- Multiidioma funcional
+- Multiidioma Visual   
+- icon
+- Hover para formulario
+- arreglar scroll de Contact
+- sombra para el puntero (que lo siga);
+- Añadir subpaginas
 - Media 
 - Media queris
 - Proyectos
@@ -21,3 +25,9 @@ Listo:
 - Contact 
 - Social networks 
 - Hover para social networks 
+
+
+
+
+Tal vez despues
+        - fa-shake paralas social networks cuando se de click
