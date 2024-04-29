@@ -1,4 +1,5 @@
 const buttonsLi = document.querySelector(".language__ul");
+const mobileButtonsLi = document.querySelector(".mobile-div__language");
 const textsToChange = document.querySelectorAll("[data-section]");
 
 const defaultLanguage = navigator.language || navigator.userLanguage;
@@ -9,12 +10,20 @@ changeLanguage = async (target) => {
   //Visual
   switch (language) {
     case "es":
+      //Desktop
       buttonsLi.classList.add("language-es");
       buttonsLi.classList.remove("language-en");
+      //mobile
+      mobileButtonsLi.classList.add("mobile-language-es");
+      mobileButtonsLi.classList.remove("mobile-language-en");
       break;
     case "en":
+      // Desktop
       buttonsLi.classList.add("language-en");
       buttonsLi.classList.remove("language-es");
+      //mobile
+      mobileButtonsLi.classList.add("mobile-language-en");
+      mobileButtonsLi.classList.remove("mobile-language-es");
       break;
   }
 

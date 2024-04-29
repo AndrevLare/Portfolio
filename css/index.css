@@ -33,16 +33,42 @@ h4 {
 }
 .mobile-div {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
-.mobile-div__ul {
+.mobile-div .mobile-div__ul {
   display: flex;
   font-size: 1.7rem;
   gap: 0.5rem;
 }
-
+.mobile-div__language__li--p {
+  font-size: 1.25rem;
+}
+.mobile-div__language {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+.mobile-div__language::before {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: var(--main-white);
+  box-shadow: 0 -1rem 15px var(--main-white);
+  transition: left 100ms ease-in-out;
+}
+.mobile-language-en::before {
+  left: 73%;
+}
+.mobile-language-es::before {
+  left: 18%;
+}
 /* Titles */
 .section {
   text-align: center;
@@ -119,11 +145,30 @@ h4 {
   color: var(--placeholder-white);
   transition: color 200ms ease;
 }
+.main__contact__form--text,
+.main__contact__form--email {
+  letter-spacing: 1mm;
+  transition: letter-spacing 350ms;
+}
 .main__contact__form--text {
   height: 10rem;
   resize: none;
 }
+input:-internal-autofill-selected {
+  appearance: none !important;
+  background: none !important;
+  color: transparent !important;
+}
+.main__contact__form--label {
+  font-size: 1rem;
+  letter-spacing: 0.75mm;
+  display: block;
+  width: 100%;
+  padding: 0 0 0 0.5rem;
+  transition: 250ms;
+}
 .main__contact__form__container {
+  padding-top: 0;
   position: relative;
 }
 .main__contact__form__container::before {
@@ -143,6 +188,17 @@ h4 {
 .main__contact__form__container:has(> textarea:focus)::before {
   right: 0;
   background-color: var(--dark-green);
+}
+.main__contact__form__container:has(> input:focus) .main__contact__form--label,
+.main__contact__form__container:has(> textarea:focus)
+  .main__contact__form--label {
+  opacity: 0.5;
+  color: var(--green);
+  letter-spacing: 0.3mm;
+}
+.main__contact__form--text:focus,
+.main__contact__form--email:focus {
+  letter-spacing: 0.75mm;
 }
 .main__contact__form--text:focus::placeholder,
 .main__contact__form--email:focus::placeholder {
@@ -302,9 +358,9 @@ h4 {
 }
 
 /* Others */
-.lines {
+/* .lines {
   display: none;
-}
+} */
 
 .panel {
   position: fixed;

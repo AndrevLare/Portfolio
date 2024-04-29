@@ -365,6 +365,8 @@
     z-index: 500;
   }
 }
+
+/* Mobile */
 @media (max-width: 999px) and (orientation: portrait) {
   .main__projects__project:active * {
     transition: color 500ms;
@@ -378,7 +380,33 @@
   .main__projects__project {
     -webkit-tap-highlight-color: transparent;
   }
+
+  /* Lineas para mobil */
+  .lines .line:nth-child(2) {
+    margin-left: 20%;
+  }
+  .lines .line:nth-child(3) {
+    margin-left: 20%;
+  }
+  .lines .line:nth-child(1) {
+    margin-left: -12.5%;
+  }
+  .lines .line:nth-child(4) {
+    margin-left: -12.5%;
+  }
+  .lines .line:nth-child(5) {
+    margin-left: -60%;
+  }
+  .lines .line:nth-child(8) {
+    margin-left: 45%;
+  }
+  .lines,
+  .line {
+    opacity: 0.5;
+  }
 }
+
+/* Muy pequeño */
 @media (height < 640px) {
   .footer {
     display: none;

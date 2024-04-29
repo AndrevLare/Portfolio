@@ -38,6 +38,26 @@
           <i class="fa-solid fa-envelope" onclick="openSocialNetwork(3)"></i>
         </li>
       </ul>
+      <ul class="mobile-div__language">
+        <li>
+          <p
+            class="mobile-div__language__li--p"
+            data-lang="es"
+            onclick="changeLanguage(this)"
+          >
+            ES
+          </p>
+        </li>
+        <li>
+          <p
+            class="mobile-div__language__li--p"
+            data-lang="en"
+            onclick="changeLanguage(this)"
+          >
+            EN
+          </p>
+        </li>
+      </ul>
     </div>
     <div class="container">
       <!-- Header -->
@@ -119,17 +139,34 @@
 
           <form class="main__contact__form">
             <div class="main__contact__form__container">
+              <label
+                for="email"
+                class="main__contact__form--label"
+                data-section="contact"
+                data-value="labelEmail"
+                >Your email</label
+              >
               <input
+                name="email"
                 type="email"
                 required
-                placeholder="Your Email"
+                placeholder="example@gmail.com"
                 class="main__contact__form--email"
+                autocomplete="off"
               />
             </div>
             <div class="main__contact__form__container">
+              <label
+                for="text"
+                class="main__contact__form--label"
+                data-section="contact"
+                data-value="labelText"
+                >Tell me about your brand and future website</label
+              >
               <textarea
+                name="text"
                 required
-                placeholder="Tell me about your brand and future website"
+                placeholder="Hi."
                 class="main__contact__form--text"
               ></textarea>
             </div>
@@ -142,6 +179,7 @@
             </div>
           </form>
         </article>
+
         <article class="main__projects">
           <h3
             class="main__projects--h3"
@@ -303,6 +341,7 @@
     <script src="js/desktopNav.js"></script>
     <script src="js/mouseShadow.js"></script>
     <script src="js/languages.js"></script>
+    <script src="js/linesHeight.js"></script>
 
     <!-- Inline Scripts -->
     <script>

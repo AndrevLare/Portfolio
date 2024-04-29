@@ -1,8 +1,12 @@
         - Metadatos 
         - Contact funcional
-        - arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
 
 Listo:
+- arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
+- añadir link mailto al header
+- añadir language en mobile
+- añadir labels al Contact
+- bug contact, cuando pongo un correo de las sugerencias sale un fondo extraño horrible
 - Arreglar projects
 - Multiidioma funcional
 - Multiidioma Visual   

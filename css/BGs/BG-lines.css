@@ -12,6 +12,7 @@
   height: 100%;
   margin: auto;
   width: 90vw;
+  pointer-events: none;
 }
 .lines .line {
   position: absolute;
@@ -59,6 +60,13 @@
   -webkit-animation-delay: 8.5s;
   animation-delay: 8.5s;
 }
+.lines .line:nth-child(2) {
+  margin-left: 0;
+}
+.lines .line:nth-child(2)::after {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
 .lines .line:nth-child(3) {
   margin-left: 27%;
 }
@@ -77,8 +85,8 @@
   margin-left: 45%;
 }
 .lines .line:nth-child(5)::after {
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
+  -webkit-animation-delay: 7.5s;
+  animation-delay: 7.5s;
 }
 .lines .line:nth-child(6) {
   margin-left: -60%;
@@ -91,15 +99,15 @@
   margin-left: -45%;
 }
 .lines .line:nth-child(7)::after {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
 }
 .lines .line:nth-child(8) {
   margin-left: -30%;
 }
 .lines .line:nth-child(8)::after {
-  -webkit-animation-delay: 2.3s;
-  animation-delay: 2.3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 @-webkit-keyframes run {
