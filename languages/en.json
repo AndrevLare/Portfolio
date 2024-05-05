@@ -6,8 +6,9 @@
   "contact": {
     "title": "HELLO.",
     "text": "Need a beutiful and personalized website to increase your brand? Get in touch with me.",
-    "labelEmail": "Your email",
-    "labelText": "Tell me about your brand  and future website"
+    "labelEmail": "Your email.",
+    "labelText": "Tell me about your brand  and future website.",
+    "labelName": "Your Name."
   },
   "projects": {
     "title": "MY PROJECTS.",

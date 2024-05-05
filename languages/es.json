@@ -6,8 +6,9 @@
   "contact": {
     "title": "HOLA.",
     "text": "¿Necesitas un sitio web elegante y personalizado para potenciar tu marca o nombre? Contactame y hablemos de tu futuro en linea.",
-    "labelEmail": "Tu email",
-    "labelText": "Hablame de ti y tu futuro sitio web"
+    "labelEmail": "Tu email.",
+    "labelText": "Hablame de ti y tu futuro sitio web.",
+    "labelName": "Tu Nombre."
   },
   "projects": {
     "title": "MIS PROYECTOS.",

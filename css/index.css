@@ -45,6 +45,7 @@ h4 {
 }
 .mobile-div__language__li--p {
   font-size: 1.25rem;
+  cursor: pointer;
 }
 .mobile-div__language {
   display: flex;
@@ -141,15 +142,22 @@ h4 {
   outline: none;
 }
 .main__contact__form--email::placeholder,
-.main__contact__form--text::placeholder {
+.main__contact__form--text::placeholder,
+.main__contact__form--name::placeholder {
   color: var(--placeholder-white);
   transition: color 200ms ease;
 }
 .main__contact__form--text,
+.main__contact__form--name,
 .main__contact__form--email {
   letter-spacing: 1mm;
   transition: letter-spacing 350ms;
 }
+.main__contact__form--name {
+  height: 2.1rem;
+  resize: none;
+}
+
 .main__contact__form--text {
   height: 10rem;
   resize: none;
@@ -197,10 +205,12 @@ input:-internal-autofill-selected {
   letter-spacing: 0.3mm;
 }
 .main__contact__form--text:focus,
+.main__contact__form--name:focus,
 .main__contact__form--email:focus {
   letter-spacing: 0.75mm;
 }
 .main__contact__form--text:focus::placeholder,
+.main__contact__form--name:focus::placeholder,
 .main__contact__form--email:focus::placeholder {
   color: var(--dark-green);
 }

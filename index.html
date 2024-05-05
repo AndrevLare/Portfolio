@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AndrevLare</title>
+
+    <meta
+      name="description"
+      content="¡Descubre la elegancia y diferencia en cada proyecto! Soy Jorge Gonzalez, AndrevLare, un desarrollador web dedicado a crear sitios web elegantes y funcionales. Con una atención meticulosa al detalle, cada página que construyo no solo se ve increíble, sino que también funciona perfectamente. ¿Listo para mejorar tu presencia en línea? Contacta directamente para comenzar tu próximo proyecto web. ¡Elegancia y diferencia garantizadas!"
+    />
+    <meta
+      name="keywords"
+      content="desarrollador web, diseño web, sitios web, elegante, diferencia"
+    />
+    <meta name="author" content="AndrevLare" />
+    <meta name="robots" content="index, follow" />
+
     <link
       rel="icon"
       href="img/cubic-LogoAndrevLareTextLess.ico"
       type="image/x-icon"
     />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Etiquetas de Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="AndrevLare, Desarrollador Web" />
+    <meta
+      property="og:description"
+      content="¡Descubre la elegancia y diferencia en cada proyecto! Soy [Tu Nombre], un desarrollador web dedicado a crear sitios web elegantes y funcionales. Con una atención meticulosa al detalle, cada página que construyo no solo se ve increíble, sino que también funciona perfectamente. ¿Listo para mejorar tu presencia en línea? Contacta directamente para comenzar tu próximo proyecto web. ¡Elegancia y diferencia garantizadas!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://andrevlare.com" />
+    <meta property="og:image" content="img/LogoAndrevLare.png" />
+    <!-- Etiquetas de Twitter Card para compartir en Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="AndrevLare, Desarrollador Web" />
+    <meta
+      name="twitter:description"
+      content="¡Descubre la elegancia y diferencia en cada proyecto! Soy [Tu Nombre], un desarrollador web dedicado a crear sitios web elegantes y funcionales. Con una atención meticulosa al detalle, cada página que construyo no solo se ve increíble, sino que también funciona perfectamente. ¿Listo para mejorar tu presencia en línea? Contacta directamente para comenzar tu próximo proyecto web. ¡Elegancia y diferencia garantizadas!"
+    />
+    <meta name="twitter:image" content="img/LogoAndrevLare.png" />
 
     <script
       src="https://kit.fontawesome.com/4271bf6616.js"
@@ -137,7 +166,26 @@
             in touch with me.
           </p>
 
-          <form class="main__contact__form">
+          <form
+            class="main__contact__form"
+            action="https://formsubmit.co/eaa3fc9b5d99692d591a96faae35b61e"
+            method="POST"
+            autocomplete="off"
+          >
+            <div class="main__contact__form__container">
+              <label
+                for="name"
+                class="main__contact__form--label"
+                data-section="contact"
+                data-value="labelName"
+              ></label>
+              <textarea
+                name="name"
+                required
+                placeholder="AndrevLare"
+                class="main__contact__form--name"
+              ></textarea>
+            </div>
             <div class="main__contact__form__container">
               <label
                 for="email"
@@ -152,19 +200,19 @@
                 required
                 placeholder="example@gmail.com"
                 class="main__contact__form--email"
-                autocomplete="off"
               />
             </div>
+
             <div class="main__contact__form__container">
               <label
-                for="text"
+                for="message"
                 class="main__contact__form--label"
                 data-section="contact"
                 data-value="labelText"
                 >Tell me about your brand and future website</label
               >
               <textarea
-                name="text"
+                name="message"
                 required
                 placeholder="Hi."
                 class="main__contact__form--text"
@@ -177,6 +225,12 @@
               <span class="main__contact__form__container--span4"></span>
               <input type="submit" class="main__contact__form--submit" />
             </div>
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Mensaje recibido. recibiras una respuesta pronto :D"
+            />
+            <input type="hidden" name="_template" value="table" />
           </form>
         </article>
 

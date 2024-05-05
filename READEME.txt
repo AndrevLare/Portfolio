@@ -1,7 +1,9 @@
         - Metadatos 
-        - Contact funcional
 
 Listo:
+- Validacion de formulario
+- Envio al servidor
+- Envio a gmail
 - arreglar lineas (calcular el height del html con js, tal vez añadirlo a mobiles)
 - añadir link mailto al header
 - añadir language en mobile
@@ -33,5 +35,7 @@ Listo:
 
 
 
-Tal vez despues
+Despues:
         - fa-shake paralas social networks cuando se de click
+        - Advertencias personalizadas
+        - cuando en querys de mobile se pone un texto largo en message. pasa algo raro con los tamaños del fomlario y asi
