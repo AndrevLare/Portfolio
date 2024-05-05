@@ -1,6 +1,6 @@
-        - Metadatos 
 
 Listo:
+- Metadatos 
 - Validacion de formulario
 - Envio al servidor
 - Envio a gmail

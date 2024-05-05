@@ -368,9 +368,9 @@ input:-internal-autofill-selected {
 }
 
 /* Others */
-/* .lines {
+.lines {
   display: none;
-} */
+}
 
 .panel {
   position: fixed;
