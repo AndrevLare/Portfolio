@@ -43,7 +43,6 @@ if (mediaQuery.matches === true) {
 } else {
   sections[0].removeAttribute("hidden");
   sections[1].removeAttribute("hidden");
-  sections[2].removeAttribute("hidden");
 }
 
 addEventListener("resize", () => {
@@ -51,7 +50,6 @@ addEventListener("resize", () => {
   if (mediaQuery.matches === false) {
     sections[0].removeAttribute("hidden");
     sections[1].removeAttribute("hidden");
-    sections[2].removeAttribute("hidden");
   } else {
     changeSection(currentSection);
   }
