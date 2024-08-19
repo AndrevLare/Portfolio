@@ -31,7 +31,7 @@ changeSection = (section) => {
       //sections[2].removeAttribute("hidden");
 
       //navElements[2].classList.add("header__nav-desktop__ul--li-Selected");
-      navElements[1].classList.remove("header__nav-desktop__ul--li-Selected");
+      navElements[1].classList.add("header__nav-desktop__ul--li-Selected");
       navElements[0].classList.remove("header__nav-desktop__ul--li-Selected");
       break;
   }
