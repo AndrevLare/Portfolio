@@ -3,6 +3,7 @@ const links = [
   "https://www.instagram.com/andrevlare/",
   "https://x.com/Gorje_2022",
   "https://bit.ly/3w3DVKb",
+  "https://www.facebook.com/people/AndrevLare/61565446117582/",
 ];
 
 openSocialNetwork = (social) => {
