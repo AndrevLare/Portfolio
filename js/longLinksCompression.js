@@ -8,9 +8,11 @@ function updateMenuItems() {
   if (mediaQuery.matches) {
     // Cambia el contenido de las <li> para pantallas pequeñas
     longLinks[0].textContent = "andrevlare...";
+    longLinks[1].textContent = "andrevlare...";
   } else {
     // Restablece el contenido original para pantallas más grandes
-    longLinks[0].textContent = "andrevlare.github.io/Portfolio/";
+    longLinks[0].textContent = "andrevlare.onrender.com";
+    longLinks[1].textContent = "andrevlare.github.io/Portfolio/";
   }
 }
 
