@@ -16,14 +16,17 @@
     "project1Title": "Mi Portfolio",
     "project1Date": "Abr/2024",
 
-    "project2Title": "Web para un Contador",
+    "project2Title": "Web para un Contador (Actualmente no disponible)",
     "project2Date": "Ene/2024",
 
     "project3Title": "Web para Cafeteria",
     "project3Date": "Feb/2024",
 
     "project4Title": "Mi Sitio Web",
-    "project4Date": "Sep/2024"
+    "project4Date": "Sep/2024",
+
+    "project5Title": "Aplicaion web de Mirror Gain$",
+    "project5Date": "Dic/2024 - Actualmente"
   },
   "footer": {
     "text": "Sitio web de AndrevLare ©2024 Todos los Derechos Reservados | El sitio no usa cookies"
