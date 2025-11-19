@@ -16,14 +16,17 @@
     "project1Title": "My Portfolio",
     "project1Date": "Apr/2024",
 
-    "project2Title": "Accounter's Web",
+    "project2Title": "Accounter's Web (Currently not available)",
     "project2Date": "Jan/2024",
 
     "project3Title": "Cafe Web",
     "project3Date": "Feb/2024",
 
     "project4Title": "My Website",
-    "project4Date": "Sep/2024"
+    "project4Date": "Sep/2024",
+
+    "project5Title": "Mirror Gain$ WebApp",
+    "project5Date": "Dec/2024 - Present"
   },
   "footer": {
     "text": "Website by AndrevLare ©2024 All rights Reserved | The website doesn´t use cookies"
