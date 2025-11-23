@@ -393,12 +393,15 @@ input:-internal-autofill-selected {
 @keyframes panel-text-animation {
   100% {
     opacity: 0;
+    visibility: visible;
   }
 }
 @keyframes panel-animation {
   100% {
     opacity: 0;
     display: none;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 
